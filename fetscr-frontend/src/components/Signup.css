@@ -1,0 +1,134 @@
+.signup-page {
+  height: 160vh;
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', Arial, sans-serif;
+  margin-top: 70px;
+}
+
+.signup-form {
+  background: #ffffff;
+  padding: 40px 35px;
+  border-radius: 12px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signup-form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+}
+
+.signup-form h2 {
+  margin-bottom: 25px;
+  color: #222;
+  text-align: center;
+  font-size: 28px;
+}
+
+.signup-form label {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: #555;
+  font-size: 14px;
+}
+
+.signup-form input {
+  padding: 12px 14px;
+  margin-top: 6px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signup-form input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+.signup-form button {
+  padding: 14px 0;
+  background: #28a745;
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 12px;
+  font-size: 16px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.signup-form button:hover {
+  background: #218838;
+  transform: translateY(-2px);
+}
+
+.signup-form p {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.signup-form a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signup-form a:hover {
+  text-decoration: underline;
+}
+
+/* Error message styling */
+.signup-error {
+  background: #f8d7da;
+  color: #842029;
+  padding: 10px 12px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 13px;
+  text-align: center;
+  border: 1px solid #f5c2c7;
+}
+
+/* Terms & Policy checkbox label */
+.signup-form label.checkbox-label {
+  flex-direction: row;
+  align-items: center;
+  margin-top: 12px;
+  color: #555;
+  font-size: 13px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.signup-form label.checkbox-label input[type="checkbox"] {
+  margin-right: 8px;
+  width: 18px;
+  height: 18px;
+}
+
+.signup-form label.checkbox-label a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signup-form label.checkbox-label a:hover {
+  text-decoration: underline;
+}
+.social-login-buttons button{
+  margin-top: auto;
+  margin-bottom: 20px;
+}

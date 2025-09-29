@@ -1,0 +1,139 @@
+/* Results.css */
+.results-page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.results-actions button {
+  margin-left: 8px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #150202;
+  background: #140600;
+  cursor: pointer;
+}
+
+.results-table-wrap {
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  overflow-x: auto;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.results-table th,
+.results-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.results-table th {
+  background: #f7f7f7;
+  position: sticky;
+  top: 0;
+}
+
+.snippet {
+  max-width: 420px;
+}
+.results-header {
+  margin-top: 80px;  /* push content below header */
+  padding: 20px;
+}
+/* Tablet screens (≤ 992px) */
+@media (max-width: 992px) {
+  .results-header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .results-actions button {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  .results-table th,
+  .results-table td {
+    padding: 6px 8px;
+    font-size: 14px;
+  }
+
+  .snippet {
+    max-width: 300px;
+  }
+}
+
+/* Mobile screens (≤ 768px) */
+@media (max-width: 768px) {
+  .results-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 100px; /* adjust if header is fixed */
+  }
+
+  .results-actions {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .results-actions button {
+    flex: 1 1 45%; /* two buttons per row if possible */
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  .results-table th,
+  .results-table td {
+    padding: 5px 8px;
+    font-size: 13px;
+  }
+
+  .snippet {
+    max-width: 100%;
+  }
+
+  .results-table-wrap {
+    padding: 8px;
+  }
+}
+
+/* Small phones (≤ 480px) */
+@media (max-width: 480px) {
+  .results-header {
+    margin-top: 120px; /* leave space for fixed header */
+  }
+
+  .results-actions button {
+    flex: 1 1 100%; /* buttons stacked */
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+
+  .results-table th,
+  .results-table td {
+    padding: 4px 6px;
+    font-size: 12px;
+  }
+
+  .results-table-wrap {
+    padding: 5px;
+  }
+}

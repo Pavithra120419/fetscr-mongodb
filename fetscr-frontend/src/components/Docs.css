@@ -1,0 +1,138 @@
+/* Keyframes */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Container */
+.docs-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  margin-top: 70px;
+  
+}
+
+/* Title with gradient + animation */
+.docs-title {
+  font-size: 2.6rem;
+  text-align: center;
+  margin-bottom: 25px;
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  animation: fadeInDown 0.8s ease forwards;
+}
+
+/* Intro */
+.docs-intro {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 35px;
+  color: #444;
+  line-height: 1.6;
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Section cards with fade-in */
+.docs-section {
+  margin-bottom: 35px;
+  background: #fff;
+  padding: 22px 24px;
+  border-left: 5px solid #2575fc;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 0.2s;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.docs-section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.docs-section h2 {
+  margin-bottom: 12px;
+  font-size: 1.6rem;
+  color: #222;
+}
+
+.docs-section ul{
+  font-size: 18px;
+}
+/* Code block */
+.docs-code {
+  display: block;
+  background: #1e1e1e;
+  color: #e0e0e0;
+  padding: 14px;
+  border-radius: 8px;
+  font-family: "Courier New", Courier, monospace;
+  overflow-x: auto;
+  margin-top: 12px;
+  font-size: 0.95rem;
+  animation: fadeInUp 1.1s ease forwards;
+}
+
+/* Warning box */
+.warning-box {
+  border-left: 5px solid #e63946;
+  background: #fff5f5;
+}
+
+.warning-box h2 {
+  color: #c92a2a;
+}
+
+/* Footer */
+.docs-footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 0.95rem;
+  color: #555;
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+.docs-footer a {
+  color: #2575fc;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.docs-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .docs-container {
+    padding: 20px 15px;
+  }
+
+  .docs-title {
+    font-size: 2rem;
+  }
+}
