@@ -40,7 +40,7 @@ export default function Profile() {
   const handleLogout = () => {
     localStorage.removeItem("fetscr_user");
     localStorage.removeItem("fetscr_token");
-    navigate("/login");
+    navigate("/langingpage");
   };
 
   return (

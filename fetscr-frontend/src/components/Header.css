@@ -52,7 +52,7 @@
 .btn-primary, .btn-login {
   padding: 8px 18px;
   border: none;
-  background: linear-gradient(45deg, #ff6ec4, #7873f5);
+  background: #3b82f6;
   color: #fff;
   border-radius: 8px;
   font-weight: 600;
@@ -68,7 +68,7 @@
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background: linear-gradient(45deg, #ff6ec4, #7873f5);
+  background: #3b82f6;
   color: #fff;
   display: flex;
   align-items: center;
